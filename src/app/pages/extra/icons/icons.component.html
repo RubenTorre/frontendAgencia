@@ -1,0 +1,100 @@
+<mat-card class="cardWithShadow">
+  <mat-card-content>
+    <div class="navbar">
+      <div>
+        <span>Bienvenido, Usuario</span>
+        <span style="margin-left: 10px;">Fecha: 29 de Agosto, 2023</span>
+      </div>
+      
+    </div>
+    <br>
+    <header>
+      <h1>Aplicación de captura de fotos</h1>
+    </header>
+    <main>
+      <div class="container">
+        <div class="photos">
+          <div class="photo-container">
+            <button type="button" class="btn btn-primary" id="btn-capture-photo-white">Capturar foto en blanco</button>
+            <img class="photo" id="img-photo-1" src="assets/images/logos/camara.png">
+          </div>
+          <div class="photo-container">
+            <button type="button" class="btn btn-primary" id="btn-capture-photo-blue">Capturar foto azul</button>
+            <img class="photo" id="img-photo-2" src="assets/images/logos/camara.png">
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="button-container">
+      
+      <button type="button" class="btn btn-danger" id="btn-cancel">Cancelar</button>
+      <button type="button" class="btn btn-primary" id="btn-save" style="margin-left: 10px;">Guardar</button>
+    </footer>
+    <style>
+      header {
+        background-color: #00bfff;
+        padding: 10px;
+        text-align: center;
+      }
+
+      h1 {
+        color: white;
+        font-size: 24px;
+      }
+
+      main {
+        margin-top: 20px;
+      }
+
+      .container {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+
+      .center {
+        text-align: center;
+      }
+
+      .button {
+        background-color: #00bfff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 10px;
+        
+      }
+
+      .button:hover {
+        background-color: #0099ff;
+      }
+
+      .photos {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 20px;
+      }
+
+      .photo-container {
+        text-align: center;
+      }
+
+      .photo {
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        background-color: white;
+      }
+
+      .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+      
+    </style>
+  </mat-card-content>
+</mat-card>
